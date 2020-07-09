@@ -26,6 +26,7 @@ module.exports = ({ io, channel, repository }) => {
                 text,
             };
 
+            
             repository.addMessage(serverMessage)
                 .then(() => {
                     namespace.emit('message', message);
